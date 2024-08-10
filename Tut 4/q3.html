@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Details Form</title>
+</head>
+<body>
+    <br/>
+    <br/>
+    <center>
+    <h2>Employee Details</h2>
+    <form action="/submit_employee_details">
+        <label for="id">Id:</label>
+        &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<input type="text" id="id" name="id" placeholder="Enter your ID" required autocomplete="on">
+        <br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required autocomplete="on">
+        <br><br>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <br><br>
+        <label for="designation">Designation:</label>
+        <select id="designation" name="designation" required>
+            <option value="manager">Manager</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="tester">Tester</option>
+            <option value="analyst">Analyst</option>
+        </select>
+        <br><br>
+        <label for="salary">Salary:</label>
+        <input type="text" id="salary" name="salary" placeholder="Enter your salary" required autocomplete="on">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</center>
+</body>
+</html>

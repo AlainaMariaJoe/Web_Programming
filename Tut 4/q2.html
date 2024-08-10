@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <center>
+        <h2>Registration Form</h2>
+    </center>
+    
+    <form action="/register">
+        <label for="firstname">Firstname:</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="firstname" name="firstname">
+        <br><br>
+        <label for="middlename">Middlename:</label>
+        &nbsp;&nbsp;<input type="text" id="middlename" name="middlename">
+        <br><br>
+        <label for="lastname">Lastname:</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="lastname" name="lastname">
+        <br><br>
+        <label for="course">Course:</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select id="course" name="course">
+            <option value="bca">BCA</option>
+            <option value="bba">BBA</option>
+            <option value="btech">B. Tech</option>
+            <option value="mba">MBA</option>
+            <option value="mca">MCA</option>
+            <option value="mtech">M. Tech</option>
+        </select>
+        <br><br>
+        <label>Gender:</label>
+        <br/>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <br/>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br/>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+        
+        <label for="phone">Phone:</label>
+        <input type="text" size="1" countryCode" name="countryCode rows=4" placeholder="+91"/>
+        <input type="text" id="phone" name="phone">
+        <br><br>
+        <label for="address">Address:</label>
+        <br>
+        <textarea id="address" name="address" rows="4" cols="50"></textarea>
+        <br><br>
+        <label for="email">Email:</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" id="email" name="email">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <label for="confirm-password">Re-type<br>password:</label>
+        <input type="password" id="confirm-password" name="confirm-password">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
